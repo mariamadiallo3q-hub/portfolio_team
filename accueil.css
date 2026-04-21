@@ -1,7 +1,13 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Times New Roman', Times, serif;
     background-color: #F5F1E9;
+     
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -40,17 +46,12 @@ ul{
 li a{
     text-decoration: none;
     color: #F5F1E9;
+    cursor: pointer;
 }
 li a:hover{
-    color: green;
+    color: #A67B5B;
 }
-/* Bnniere */
-/* .page_hero::before {
-  content: 'ACCUEIL';
-  font-size: 160px;
-  color: #1F1F1F;
-  opacity: 0.05;
-} */
+
 .page_hero main{
     margin-top: 120px;
     display: flex;
@@ -89,122 +90,161 @@ li a:hover{
     font-size: 20px;
     border-radius: 10px;
 }
-/* Mini presentation */
-/* .pres{
-    margin-top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-.presimg{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.presimage img{
-    width: 200px;
-    height: 200px;
-} */
-/* Experience  */
-/* .experience{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.experience img{
-    width: 250px;
-    height: 200px;
-    border-radius: 10px;
-}
-.experience p{
-    font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-} */
-/* Aperçue de la galerie  */
-/* .gal{
-    background-color: white;
-}
-.galerie img{
-    width: 100%;
-    margin: 5px;
-    border-radius: 5px;
-}
-.galerie{
-    margin-top: 20px;
-    column-count: 4;
-    column-gap: 10px;
-}
-.textegalerie{
-    margin-top: 20px;
-    text-align: center;
-    margin-top: 10px;
-}
-.boutongal{
-    text-align: center;
-    padding: 7px;
-    background-color: #353131;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-.boutongal a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-} */
-/* Services principaux  */
-/* .titreservices{
-    text-align: center;
-    margin-bottom: 20px;
-}
-.services{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}
-.diffservices{
-    background-color: #EAE3D2;
-    padding: 10px;
-    text-align: center;
-}
-.diffservices h3{
-    margin-bottom: 5px;
-}
-.diffservices img{
-    width: 100%;
-    height: 300px;
-    border-radius: 10px;
-}
-.diffservices p{
-    margin-bottom: 15px;
-}
-.boutonsavoir{
-    background-color: #3E3E3E;
-    padding: 8px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
 
-} */
-/* Footer  */
-footer {
-    background-color: #3E3E3E;
-    border-top: 1px solid #C4B49A;
-    padding: 28px 48px;
-    display: flex; 
+
+/* DEBUT PARTIE A PROPOS*/
+
+.page_hero2{
+    color: #1F1F1F;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+     border-bottom: 1px solid #C4B49A;
+     padding: 48px;
+}
+
+.page_hero2::before {
+  content: 'A PROPOS';
+  font-size: 10rem;
+  color: #1F1F1F;
+  opacity: 0.05;
+}
+.page_hero2 p{
+    padding: 10px;
+    margin: 20px;
+   color: #A67B5B;
+   
+}
+.page_hero2 p.de_nous{
+    font-size: 20px;
+}
+.page_hero2 h1 {
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 75px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-     justify-content: space-between;
+}
+/*section principale*/
+.section_1{
+    color: #3E3E3E;
+     display: grid; 
+     grid-template-columns: 1fr 1.1fr;
+    gap: 80px; 
+    align-items: center;
+     margin: 0 auto;
+    padding: 80px 48px;
+}
+.texte{
+    flex-wrap: wrap;
+    color: #8A7560;
+    font-size: 20px;
+}
+.passion_texte {
+     color: #A67B5B;
+     margin: 20px 0px 20px 0px;
+}
+.texte h2 {
+    font-size: 40px;
+     margin: 20px 0px 20px 0px;
+     color: #1F1F1F;
+}
+.texte p strong {
+    color: #1F1F1F;
+}
+.statistique {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: -15px;
+}
+.texte_2{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #C4B49A;
+}
+.stat_nombre{
+     color: #A67B5B;
+     font-size: 35px;
+}
+.stat_mot{
+      color: rgb(34, 34, 34);
+}
+/*competences */
+.comp{
+    background-color: #EAE3D2;
+     border-top: 1px solid #C4B49A;
+    border-bottom: 1px solid #C4B49A;
+    padding: 70px 48px;
+    color: #1F1F1F;
+    display: grid;
+}
+.comp_1{
+    text-align: center;
+    margin-bottom: 28px;
+}
+.specialites{
+     font-size: 20px;
+     color: #A67B5B;
+     margin: 0px 0px 20px 0px;
+    
+}
+.comp h3 {
+    font-size: 40px;
+}
+.les_cartes{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     line-height: 30px;
+}
+.carte_colomne{
+    background: #F5F1E9;
+  padding: 28px 24px;
+  border: 1px solid #C4B49A;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.image_2{
+    display: flex;
+    justify-content: center;
+     padding: 10px;
+}
+
+
+.carte_colomne:hover{
+    border-color: #A67B5B;
+}
+ 
+.carte_colomne strong {
+     font-size: 20px;
+}
+.carte_colomne p.descrip{
+    color: black;
+     font-size: 15px;
+}
+/*enfin derniere partie*/
+.photographie{
+    padding: 80px 48px;
+    text-align: center;
+    color: #1F1F1F;
   }
-  footer p { 
-    font-size: 1;
-     color: #F5F1E9; 
+.citation{
+    font-size: 40px;
+    font-style: italic;
+    flex-wrap: wrap;
+  }
+.citation span{
+    color: #A67B5B;
 }
-  footer a { 
-    color: #A67B5B; 
-    text-decoration: none; 
-    font-size: 1; 
+.moi{
+    font-size: 20px;
+    margin-top: 20px;
+      color: #8A7560;
 }
+
+/* FIN A PROPOS*/
