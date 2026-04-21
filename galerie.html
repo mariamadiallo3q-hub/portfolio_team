@@ -7,22 +7,7 @@
     <link rel="stylesheet" href="style/galerie.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="">
-                <img src="images/LOGO.jfif" alt="">
-            </a>
-        </div>
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Apropos</a></li>
-                    <li><a href="#">Galerie</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    
     </header>
     <section class="page_hero">
     <h2>Galerie</h2>
@@ -188,5 +173,76 @@ lightbox2.addEventListener('click', (e) => {
     }
 });
 </script>
+<h2 class="titre-mariage">
+    Des moments uniques capturés pour célébrer l’amour et l’émotion, histoire de les immortaliser.
+</h2>
+
+<div class="gallery-mariage">
+    <img src="images/S1.jpg" class="image-item-mariage" width="200" height="400">
+    <img src="images/S2.jpg" class="image-item-mariage" width="250" height="300">
+    <img src="images/S3.jpg" class="image-item-mariage" width="300" height="300">
+    <img src="images/S4.jpg" class="image-item-mariage"width="200" height="400" >
+    <img src="images/S5.jpg" class="image-item-mariage" width="250" height="400">
+    <img src="images/S6.jpg" class="image-item-mariage" width="300" height="300">
+</div>
+
+<!-- LIGHTBOX MARIAGE -->
+<div class="lightbox-mariage" id="lightbox-mariage">
+    <span class="close-mariage" onclick="closeLightboxMariage()">&times;</span>
+    <img id="lightbox-img-mariage">
+    
+    <div class="nav-mariage">
+        <span onclick="changeImageMariage(-1)">&#10094;</span>
+        <span onclick="changeImageMariage(1)">&#10095;</span>
+        
+    </div>
+    
+</div>
+    <script>
+        const imagesMariage = document.querySelectorAll('.image-item-mariage');
+const lightboxMariage = document.getElementById('lightbox-mariage');
+const lightboxImgMariage = document.getElementById('lightbox-img-mariage');
+
+let currentIndexMariage = 0;
+
+/* ouvrir */
+imagesMariage.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        currentIndexMariage = index;
+        openLightboxMariage();
+    });
+});
+
+function openLightboxMariage() {
+    lightboxMariage.style.display = "flex";
+    showImageMariage();
+}
+
+function showImageMariage() {
+    lightboxImgMariage.src = imagesMariage[currentIndexMariage].src;
+}
+
+/* fermer */
+function closeLightboxMariage() {
+    lightboxMariage.style.display = "none";
+}
+
+/* navigation */
+function changeImageMariage(step) {
+    currentIndexMariage += step;
+
+    if (currentIndexMariage < 0) currentIndexMariage = imagesMariage.length - 1;
+    if (currentIndexMariage >= imagesMariage.length) currentIndexMariage = 0;
+
+    showImageMariage();
+}
+
+/* clic dehors */
+lightboxMariage.addEventListener('click', (e) => {
+    if (e.target === lightboxMariage) {
+        closeLightboxMariage();
+    }
+});
+    </script>
 </body>
 </html>
