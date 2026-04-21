@@ -45,12 +45,12 @@ li a:hover{
     color: green;
 }
 /* Bnniere */
-.page_hero::before {
+/* .page_hero::before {
   content: 'ACCUEIL';
   font-size: 160px;
   color: #1F1F1F;
   opacity: 0.05;
-}
+} */
 .page_hero main{
     margin-top: 120px;
     display: flex;
