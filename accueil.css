@@ -597,6 +597,293 @@ li a:hover{
 
 /*FIN GALERIE*/
 
+/* DEBUT CONTACT*/
+
+/*partie hero*/
+
+.page_hero4{
+    color: #1F1F1F;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+     border-bottom: 1px solid #C4B49A;
+     padding: 48px;
+}
+
+
+.page_hero4::before {
+  content: 'CONTACT';
+  font-size: 10rem;
+  color: #1F1F1F;
+  opacity: 0.05;
+}
+
+.page_hero4 p{
+    padding: 10px;
+    margin: 20px;
+   color: #A67B5B;
+   
+}
+
+.page_hero4 p.de_nous{
+    font-size: 20px;
+}
+
+.page_hero4 p.question{
+     
+     color: #8A7560;
+     margin-bottom: 40px;
+     font-size: 20px;
+}
+
+.page_hero4 h1 {
+    
+    padding: 10px;
+    font-size: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*section principale*/
+.section_1{
+    color: #3E3E3E;
+     display: grid; 
+     grid-template-columns: 1fr 1.1fr;
+    gap: 80px; 
+    align-items: center;
+     margin: 0 auto;
+    padding: 80px 48px;
+}
+/*formulaire*/
+
+.formulaire{
+
+    background: #EAE3D2;
+     border: 1px solid #C4B49A;
+     padding: 40px;
+      border-radius: 8px;
+}
+
+.titre_du_form {
+
+    text-align: center;
+    margin-bottom: 14px;
+
+}
+
+.prenom_nom {
+     display: grid;
+      grid-template-columns: 1fr 1fr;
+     margin-bottom: 14px;
+}
+
+.element{
+
+    display: flex;
+     flex-direction: column;
+    gap: 7px;
+     margin-bottom: 14px;
+}
+
+.element label {
+
+    font-size: 15px;
+     letter-spacing: 2px;
+       color: #8A7560;
+}
+
+ .element input,
+  .element select,
+  .element textarea {
+    background: #F5F1E9;
+     border: 1px solid #C4B49A;
+    border-radius: 4px;
+     padding:20px;
+    color: #1F1F1F;
+    font-size: 15px;
+      transition: border-color 0.3s;
+       width: 70%;
+  }
+
+  input,
+   select,
+    textarea {
+        border-color: #A67B5B;
+    }
+
+    .cont_bout {
+        text-align: center;
+    }
+
+    .boutton {
+    width: 70%;
+     padding: 14px;
+    background: #A67B5B;
+     border: none;
+      border-radius: 4px;
+    color: #F5F1E9; 
+      letter-spacing: 2px;
+     cursor: pointer;
+      transition: all 0.25s;
+  }
+
+  .boutton:hover{
+     transform: translateY(-2px);
+  }
+  /*fin de formulaire*/
+
+  .texte{
+    flex-wrap: wrap;
+    color: #8A7560;
+    font-size: 20px;
+}
+.passion_texte {
+     color: #A67B5B;
+     margin: 20px 0px 20px 0px;
+}
+
+.texte h2 {
+    font-size: 40px;
+     margin: 20px 0px 20px 0px;
+     color: #1F1F1F;
+}
+.texte p strong {
+
+    color: #1F1F1F;
+}
+
+.statistique {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: -15px;
+}
+
+.texte_2{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #C4B49A;
+}
+
+.horaire_loca h3{
+    color: #1F1F1F;
+}
+
+.horaire{
+    margin-bottom: 10px;
+    display: flex;
+     justify-content: space-evenly;
+}
+.loca pre{
+    margin-bottom: 10px;
+}
+.carte{
+   
+    width: 500px;
+      height: 270px;
+      border: none;
+}
+
+/*competences */
+
+.comp{
+    background-color: #EAE3D2;
+     border-top: 1px solid #C4B49A;
+    border-bottom: 1px solid #C4B49A;
+    padding: 70px 48px;
+    color: #1F1F1F;
+    display: grid;
+
+}
+.comp_1{
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.specialites{
+     font-size: 20px;
+     color: #A67B5B;
+     margin: 0px 0px 20px 0px;
+    
+
+}
+
+.comp h3 {
+    font-size: 40px;
+}
+
+.les_cartes{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     line-height: 30px;
+}
+
+.carte_colomne{
+    background: #F5F1E9;
+  padding: 28px 24px;
+  border: 1px solid #C4B49A;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.carte_colomne:hover{
+
+    border-color: #A67B5B;
+}
+ 
+.carte_colomne strong {
+     font-size: 20px;
+}
+
+.carte_colomne p.descrip{
+
+    color: #8A7560;
+     font-size: 15px;
+}
+
+/*enfin derniere partie*/
+.image_resaux{
+    height: 60px;
+    width: 60px;
+} .resaux{
+    display: flex;
+     justify-content: space-evenly;
+}
+
+.resaux a img {
+
+    transition: all 0.3s;
+}
+
+.resaux a img:hover {
+
+    width: 80px;
+    height: 80px;
+
+}
+
+/*enfin*/
+ footer {
+    background-color: #3E3E3E;
+    border-top: 1px solid #C4B49A;
+    padding: 28px 48px;
+    display: flex; 
+    align-items: center;
+     justify-content: space-between;
+  }
+  footer p { 
+    font-size: 1;
+     color: #F5F1E9; 
+}
+  footer a { 
+    color: #A67B5B; 
+    text-decoration: none; 
+    font-size: 1; 
+}
+
 
 
 

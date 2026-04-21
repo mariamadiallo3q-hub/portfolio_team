@@ -19,7 +19,7 @@
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#a_propos">A propos</a></li>
                     <li><a href="#galerie0">Galerie</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -134,7 +134,7 @@
 </div>
 
    <!--FIN A PROPOS-->
-     <
+     
 
   
 <!--DEBUT DE GALERIE-->
@@ -314,7 +314,7 @@ lightbox2.addEventListener('click', (e) => {
     <img src="media/S1.jpg" class="image-item-mariage" width="100" height="400">
     <img src="media/S2.jpg" class="image-item-mariage" width="120" height="300">
     <img src="media/S3.jpg" class="image-item-mariage" width="100" height="300">
-    <img src="media/S4.jpg" class="image-item-mariage"width="100" height="400" >
+    <img src="media/S4.jpg" class="image-item-mariage" width="100" height="400" >
     <img src="media/S5.jpg" class="image-item-mariage" width="100" height="400">
     <img src="media/S6.jpg" class="image-item-mariage" width="100" height="300">
 </div>
@@ -364,7 +364,7 @@ function closeLightboxMariage() {
 function changeImageMariage(step) {
     currentIndexMariage += step;
 
-    if (currentIndexMariage < 0) currentIndexMariage = imagesMariage.length - 1;
+    if (currentIndexMariage <0) currentIndexMariage = imagesMariage.length - 1 
     if (currentIndexMariage >= imagesMariage.length) currentIndexMariage = 0;
 
     showImageMariage();
@@ -375,10 +375,127 @@ lightboxMariage.addEventListener('click', (e) => {
     if (e.target === lightboxMariage) {
         closeLightboxMariage();
     }
-});ipt>
+});       
 
-         
+</script>
 <!--FIN GALERIE-->
+
+
+<!-- DEBUT PARTIE CONTACT-->
+
+
+ <!--partie Hero-->
+  <div class="page_hero4" id="contact">
+       <p class="de_nous">—  PARLONS-NOUS</p>
+       <h1>Travaillons <br> <span><i>ensemble</i></span></h1>
+         <p class="question">Un projet ? Une question ? Je suis la.</p>      
+  </div>
+  <!--partie principale-->
+
+  <section class="section_1">
+
+       <div class="texte">
+         <div class="texte_2">
+    <p class="passion_texte">— NOUS JOINDRE</p>
+    <h2>Restons en <i>contact</i></h2>
+    <p>Disponible pour des collaborations, des commandes de photos ou des séances portrait. Je réponds à tous les messages sous 24h.</p>
+      </div>
+    <div class="horaire_loca">
+        <div class="horaire">
+         <h3>Disponibilité</h3>
+          <p>Lundi – Samedi, 9h a 18h</p>
+          </div>
+
+          <div class="loca">
+             <h3>Localisation</h3>
+          <pre style="font-family: 'Times New Roman', Times, serif;">   Dakar, Sénégal</pre>
+               <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.691661209603!2d-17.288635526353264!3d14.786389672503942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1a07e2f23e099%3A0x65ad33f588813e2!2sISI%20KEUR%20MASSAR!5e0!3m2!1sfr!2ssn!4v1769552490005!5m2!1sfr!2ssn"
+                width="600" height="450">
+               </iframe>
+           </div>
+    </div>
+      
+    </div>
+
+      <form class="formulaire">
+
+        <div class="titre_du_form"><h2>Envoyez un message</h2></div>
+
+           <div class="prenom_nom">
+      <div class="element">
+        <label for="prenom">PRENOM *
+        <input type="text" id="prenom" placeholder="Saisir votre prenom" required>
+        </label>
+      </div>
+
+      <div class="element">
+        <label for="nom">NOM *
+        <input type="text" id="nom" placeholder="Saisir votre nom" required>
+        </label>
+      </div>
+           </div>
+
+     <div class="element">
+        <label for="email">EMAIL *
+        <input type="text" id="email" placeholder="Saisir votre email">
+        </label>
+      </div>
+
+    <div class="element">
+      <label for="phone">TEL
+      <input type="tel" id="phone" placeholder="+221 77 000 00 00" required>
+      </label>
+    </div>
+
+    <div class="element">
+      <label for="choix">SUJET *
+      <select id="choix" required>
+        <option>Choisir un sujet...</option>
+        <option>Collaboration artistique</option>
+        <option>Commande de photos</option>
+        <option>Seance portrait</option>
+        <option>Reportage nature</option>
+        <option>Autre</option>
+      </select>
+      </label>
+    </div>
+
+    <div class="element">
+      <label for="desc">MESSAGE *
+      <textarea id="desc"  placeholder="Decrivez votre projet, vos attentes, la date souhaitee..." required ></textarea>
+      </label>
+    </div>
+
+
+   <div class="cont_bout">
+     <button type="submit" class="boutton">ENVOYER LE MESSAGE</button>
+   </div>
+
+      </form>
+  </section>
+
+
+  <!--competencess-->
+
+  <section class="comp">
+
+    <div class="comp_1">
+       <p class="specialites">— VOUS AVEZ DES QUESTIONS</p>
+    <h3>NOS RESAUX</h3>
+    </div>
+
+    <div class="resaux">              
+         <a href="https://www.instagram.com" target="_blank"><img class="image_resaux" src="media/instagram.png" alt=""></a>
+         <a href="https://www.facebook.com" target="_blank"><img class="image_resaux" src="media/facebook.png" alt=""></a>
+         <a href="https://wa.me/221703242597" target="_blank"><img class="image_resaux"  src="media/whatsapp.png" alt=""></a>        
+    </div>
+  </section>
+
+<!--finnnnnnnnnnnnnnnnnnnn-->
+<footer>
+        <p>© 2026 Mob photography — Tous droits réservés</p>
+  <a href="#accueil">Retour a l'acceuil →</a>
+</footer>
 
 
 </body>
