@@ -20,9 +20,11 @@ header{
     background-color: #3E3E3E;
     box-shadow: #EAE3D2 5px 5px 3px;
     border-bottom: 3px solid #EAE3D2;
-    position: fixed;
-    width: 100%;
+    position: fixed; 
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000; 
 }
 .logo img{
     margin-top: 5px;
@@ -248,3 +250,353 @@ li a:hover{
 }
 
 /* FIN A PROPOS*/
+
+/*DEBUT GALERIE*/
+
+
+
+
+.page_hero3::before {
+  content: 'GALERIE';
+  font-size: 160px;
+  color: #1F1F1F;
+  opacity: 0.05;
+}
+.page_hero3 {
+    position: relative; 
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page_hero3::before {
+    content: "GALERIE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 160px;
+    color: #1F1F1F;
+    opacity: 0.05;
+
+    white-space: nowrap;
+    pointer-events: none;
+}
+.titre-realisations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-color:#EAE3D2;
+}
+
+.titre-realisations h2 {
+    font-family: 'Playfair Display', serif;
+    color: #A67B5B; /* doré élégant */
+    margin: 0;
+}
+
+.titre-realisations .petit {
+    display: block;
+    font-size: 4.5rem;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.titre-realisations .grand {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.realisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    
+}
+
+.titre-realisation {
+    font-size: 42px;
+    font-weight: 600;
+    color:#A67B5B; /* effet doré */
+    font-family: 'Playfair Display', serif; 
+    letter-spacing: 2px;
+    line-height: 1.4;
+    max-width: 800px;
+}
+/* MASONRY STYLE */
+.gallery {
+    column-count: 3;
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.image-item {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .gallery { column-count: 2; }
+}
+
+@media (max-width: 600px) {
+    .gallery { column-count: 1; }
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 60%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* flèches */
+.nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 85%;
+    max-height: 65%;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* bouton fermer */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+}
+
+/* flèches */
+.nav {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav span:hover,
+.close:hover {
+    color: #D4AF37;
+    transform: scale(1.1);
+}
+.gallery2 {
+    column-count: 3;
+    column-gap: 15px;
+}
+
+.image-item2 {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.lightbox2 {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox2 img {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+.nav2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.close2 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.gallery, .gallery2 {
+    column-count: 3;
+    column-gap: 15px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.image-item, .image-item2 {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: block;
+}
+.titre-nature {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Playfair Display', serif;
+    color: #A67B5B; /* doré */
+    max-width: 800px;
+    margin: 60px auto;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    
+}
+.gallery2,
+.gallery-mariage {
+    column-count: 3;
+    column-gap: 15px;
+    padding: 20px;
+}
+
+.image-item2,
+.image-item-mariage {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-item2:hover,
+.image-item-mariage:hover {
+    transform: scale(1.03);
+}.lightbox2,
+.lightbox-mariage {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox2 img,
+.lightbox-mariage img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close2,
+.close-mariage {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav2 span,
+.nav-mariage span {
+    font-size: 40px;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+}
+.titre-mariage {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 500;
+    color:#A67B5B; 
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin: 60px 20px;
+    position: relative;
+}
+
+
+.titre-mariage::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #c9a96e;
+    margin: 15px auto 0;
+}
+
+
+/*FIN GALERIE*/
+
+
+
+
