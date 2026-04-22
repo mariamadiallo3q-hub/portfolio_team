@@ -8,6 +8,10 @@ body{
      
 }
 
+.italique {
+    color: #A67B5B;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -69,18 +73,30 @@ li a:hover{
     font-size: 30%;
     color: #1F1F1F;
 }
+
+
 .banniereimage img{
     width: 300px;
     border-radius: 200px;
     box-shadow: 50px 10px 20px #353131;
 }
 .texte1{
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 20px;
+      color: #A67B5B;
+    margin-bottom: 18px;
 }
+
+.titre_0{
+
+    font-size: 40px;
+     margin-bottom: 18px;
+
+}
+
 .texte2{
     margin-bottom: 20px;
-    font-size: 25px;
+    color: #8A7560;
+     font-size: 20px;
 }
 .bouton a{
     margin-right: 15px;
@@ -92,6 +108,7 @@ li a:hover{
     font-size: 20px;
     border-radius: 10px;
 }
+
 
 
 /* DEBUT PARTIE A PROPOS*/
@@ -231,7 +248,7 @@ li a:hover{
 }
 /*enfin derniere partie*/
 .photographie{
-    padding: 80px 48px;
+    padding: 50px 48px;
     text-align: center;
     color: #1F1F1F;
   }
@@ -245,92 +262,71 @@ li a:hover{
 }
 .moi{
     font-size: 20px;
-    margin-top: 20px;
-      color: #8A7560;
+    margin-top: 25px;
+      color: #c5b19d;
 }
 
 /* FIN A PROPOS*/
 
 /*DEBUT GALERIE*/
 
-
-
+.page_hero3{
+       background-color: #EAE3D2;
+    color: #1F1F1F;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+     border-bottom: 1px solid #C4B49A;
+     padding: 48px;
+}
 
 .page_hero3::before {
   content: 'GALERIE';
-  font-size: 160px;
+  font-size: 10rem;
   color: #1F1F1F;
   opacity: 0.05;
 }
-.page_hero3 {
-    position: relative; 
-    height: 200px; 
+.page_hero3 p{
+    padding: 10px;
+    margin: 20px;
+   color: #A67B5B;
+   
+}
+.page_hero2 p{
+    font-size: 20px;
+}
+.page_hero3 h1 {
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 75px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.titre-realisations  {
+     font-size: 40px;
+     margin: 20px 0px 20px 0px;
+     color: #1F1F1F;
+    /* doré élégant */
 }
 
 
-.page_hero3::before {
-    content: "GALERIE";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-    font-size: 160px;
-    color: #1F1F1F;
-    opacity: 0.05;
-
-    white-space: nowrap;
-    pointer-events: none;
-}
-.titre-realisations {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 80px 20px;
-    background-color:#EAE3D2;
+.rea{
+    padding-bottom: 10px;
+     text-align: center;
+      padding: 80px 20px;
 }
 
-.titre-realisations h2 {
-    font-family: 'Playfair Display', serif;
-    color: #A67B5B; /* doré élégant */
-    margin: 0;
-}
+.rea h2 {
 
-.titre-realisations .petit {
-    display: block;
-    font-size: 4.5rem;
-    letter-spacing: 4px;
-    margin-bottom: 10px;
+    font-size: 40px;
 }
+/*=============================================================================>>>>>>>*/
 
-.titre-realisations .grand {
-    display: block;
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-.realisation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 80px 20px;
-    
-}
 
-.titre-realisation {
-    font-size: 42px;
-    font-weight: 600;
-    color:#A67B5B; /* effet doré */
-    font-family: 'Playfair Display', serif; 
-    letter-spacing: 2px;
-    line-height: 1.4;
-    max-width: 800px;
-}
 /* MASONRY STYLE */
 .gallery {
     column-count: 3;
@@ -507,15 +503,20 @@ li a:hover{
     border-radius: 15px;
     display: block;
 }
+
+/*=======================================================================================================================*/
+.conttn {
+    padding-bottom: 10px;
+     text-align: center;
+     justify-content: center;
+      padding: 80px 20px;
+}
+
 .titre-nature {
+
     text-align: center;
-    font-size: 38px;
-    font-family: 'Playfair Display', serif;
-    color: #A67B5B; /* doré */
-    max-width: 800px;
-    margin: 60px auto;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
+    align-items: center;
+    font-size: 40px;
     
 }
 .gallery2,
@@ -602,6 +603,7 @@ li a:hover{
 /*partie hero*/
 
 .page_hero4{
+     background-color: #EAE3D2;
     color: #1F1F1F;
      display: flex;
      flex-direction: column;

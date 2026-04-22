@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="accueil.css">
     <title>Portfolio</title>
 </head>
-<body>
+<section id="accueil">
     <header>
         <div class="logo">
             <a href="#accueil">
@@ -26,11 +26,11 @@
     </header>
     <!-- Banniere principale -->
      <section class="page_hero">
-        <main id="accueil">
+        <main>
             <div class="textehero">
                 <div class="bannieretexte">
-                    <p class="texte1">Photographe - Heritage</p>
-                    <h1>Capturer l'héritage à travers chaque image</h1>
+                    <p class="texte1">— PHOTAGRAPHIE <i>&</i> HERITAGE</p>
+                    <h2 class="titre_0">Conserver l'<span><i class="italique">héritage</i>,</span> <br> à travers chaque image</h2>
                     <p class="texte2">
                         Des moments précieux transformés <br>
                         en souvenirs intemporels
@@ -52,7 +52,7 @@
   <!--partie Hero-->
   <div class="page_hero2" id="a_propos">
        <p class="de_nous">—  QUI SOMMES-NOUS</p>
-       <h1>L'histoire derriere <br> <span>l'<i>objectif</i></span></h1>      
+       <h1>L'histoire derriere <br> <span>l'<i class="italique">objectif</i></span></h1>      
   </div>
   <!--partie principale-->
 
@@ -64,7 +64,7 @@
        <div class="texte">
        <div class="texte_2">
       <p class="passion_texte">— NOTRE PASSION</p>
-    <h2>Capturer la <i>lumière</i>,<br>raconter une histoire</h2>
+    <h2>Capturer la <i class="italique">lumière</i>,<br>raconter une histoire</h2>
     <p>Passionné de photographie depuis plus de 8 ans, je parcours le monde avec mon objectif pour immortaliser les moments fugaces que la vie nous offre — un rayon de soleil sur une feuille, un sourire spontané, un paysage à couper le souffle.</p>
     <p>Spécialisé dans la photographie de <strong>nature</strong> et de <strong>portrait</strong>, mon travail cherche toujours l'équilibre parfait entre technique et émotion. Chaque photo est une fenêtre ouverte sur un instant unique.</p>
     <p>Basé à Dakar, je voyage régulièrement pour capturer la diversité de notre monde à travers mon objectif.</p>
@@ -117,15 +117,14 @@
         <div class="image_2"><img src="media/retouche.png" alt="image de Retouche photo" width="100px" height="100px"></div>
         <p><strong>Retouche photo</strong></p>
         <div class="descrip">Post-traitement professionnel pour sublimer chaque cliché sans le dénaturer.</div>
+
       </div>
-
                </div>
-
        </div>
 
   </section>
 
-  <!--j' y suis presque / le footer-->
+  <!--DERNIERE SECTION-->
 
   <div class="photographie">
   <p class="citation"><span>❝</span>La photographie, c'est l'art de geler le temps pour <br>
@@ -140,25 +139,15 @@
 <!--DEBUT DE GALERIE-->
 
 
-        
-    
-    <section class="page_hero3" id="galerie0">
-    <h2>Galerie</h2>
-</section>
-    <section class="titre-realisations">
-    <h2>
-        <span class="petit">NOS</span>
-        <span class="grand">RÉALISATIONS</span>
-    </h2>
-</section>
-<hr>
-<section class="realisation">
-    <hr>
-    <h2 class="titre-realisation">
-        Des portraits authentiques qui mettent en lumière la beauté de chacun.
-    </h2>
-    <hr>
-</section>
+ <div class="page_hero3" id="galerie0">
+       <p class="titre_2">—  NOTRE GALERIE</p>
+       <h1>Nos <br> <span><i class="italique">realisations</i></span></h1>      
+  </div> 
+
+           <div class="rea">
+                <h2>Des portraits authentiques qui mettent en <i class="italique">lumière</i>,<br>la beauté de chacun</h2>
+           </div>   
+
 <!-- GALLERIE MASONRY -->
 <div class="gallery">
     <img src="media/img1.jpg" class="image-item portrait" alt="">
@@ -234,13 +223,17 @@ lightbox.addEventListener('click', (e) => {
     }
 });
 </script>
-<hr>
+
+<div class="conttn">
 <h2 class="titre-nature">
-    Laissez-vous emporter par la beauté de la nature, à travers des instants capturés avec passion et authenticité.
-</h2>
+    Laissez-vous emporter par la <i class="italique">beauté</i> de la <i class="italique">nature</i>,
+    <br>à travers des instants capturés avec passion et authenticite</h2>
+</div>
 
 
 <div class="gallery2">
+
+    
     <img src="media/p1.jpg" class="image-item2" alt="" width="200" height="400">
     <img src="media/p2.jpg" class="image-item2" alt="" width="250" height="315">
     <img src="media/p3.png" class="image-item2" alt="" width="200" height="200">
@@ -306,9 +299,12 @@ lightbox2.addEventListener('click', (e) => {
     }
 });
 </script>
-<h2 class="titre-mariage">
-    Des moments uniques capturés pour célébrer l’amour et l’émotion, histoire de les immortaliser.
-</h2>
+
+<div class="conttn">
+<h2 class="titre-nature">
+    Des moments uniques capturés pour célébrer <br> l’<i class="italique">amour </i>et l’<i class="italique">émotion</i>,
+     histoire de les immortaliser</h2>
+</div>
 
 <div class="gallery-mariage">
     <img src="media/S1.jpg" class="image-item-mariage" width="100" height="400">
@@ -378,6 +374,8 @@ lightboxMariage.addEventListener('click', (e) => {
 });       
 
 </script>
+
+</section>
 <!--FIN GALERIE-->
 
 
@@ -397,7 +395,7 @@ lightboxMariage.addEventListener('click', (e) => {
        <div class="texte">
          <div class="texte_2">
     <p class="passion_texte">— NOUS JOINDRE</p>
-    <h2>Restons en <i>contact</i></h2>
+    <h2>Restons en <i class="italique">contact</i></h2>
     <p>Disponible pour des collaborations, des commandes de photos ou des séances portrait. Je réponds à tous les messages sous 24h.</p>
       </div>
     <div class="horaire_loca">
